@@ -1,0 +1,7 @@
+# node_modules フォルダは要らない
+node_modules/
+
+# 以下のファイルは要らない
+gulpfile.js
+package.json
+.DS_Store

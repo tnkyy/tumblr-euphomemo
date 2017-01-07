@@ -1,0 +1,27 @@
+// Color Variables
+
+$bg: #fff; // Background color
+
+$base: #525252; // Base text color
+$light: #ABABAB; // Light text color
+
+$link: #DB9E36; // Link text color
+$hover: lighten($link,12%); // Link text color(hover)
+
+$border: rgba(171, 171, 171, .5); // Border color
+
+$accent-01: #105B63;  // theme color1
+$accent-02: #FFD34E;  // theme color2
+// $accent-03: #f5f5f5;  // theme color3
+
+$transition: 0.5s;
+
+
+// Smartphone - PC
+$mq-xs: '(min-width: 480px)'; // Media Queries - Smartphone
+
+$mq-sm: '(min-width: 768px)'; // Media Queries - Small tablet & smartphone
+
+$mq-md: '(min-width: 1024px)'; // Media Queries - Tablet
+
+$mq-lg: '(min-width: 1200px)'; // Media queries - Large display

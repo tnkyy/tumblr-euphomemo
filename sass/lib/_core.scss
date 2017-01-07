@@ -1,0 +1,247 @@
+@charset 'utf-8';
+// Core (Main Style)
+
+// ==========================================
+//
+// header
+//
+// ==========================================
+header.header {
+  width: 100%;
+  background: url(../img/header_bg.jpg) 50% 0 no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  .background_color {
+    background-color: rgba(255, 211, 78, 0.8);
+  }
+}
+header.header .logo {
+  width: 95px;
+  margin: 10px 0;
+  @media #{$mq-sm} {
+    width: 202px;
+    margin: 60px 0;
+  }
+}
+header.header h1 {
+  margin: 0;
+}
+
+// ==========================================
+//
+// entry
+//
+// ==========================================
+.post {
+  padding: 50px 15px;
+  border-bottom: 1px solid $border;
+  @media #{$mq-md} {
+    width: 860px;
+    margin: 40px auto;
+    border: 1px solid $border;
+    border-radius: 8px;
+  }
+}
+
+// entry_header
+header.entry_header {
+  text-align: center;
+  @media #{$mq-sm} {
+    width: 600px;
+    margin: 0 auto;
+  }
+  @media #{$mq-md} {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+header.entry_header .date {
+  font-size: 13px;
+  color: $light;
+}
+header.entry_header h1 {
+  margin: 15px 0;
+  font-size: 22px;
+  font-weight: normal;
+  font-feature-settings : "palt" 1;
+  a {
+    color: $accent-01;
+    &:hover {
+      color: lighten($accent-01, 10%);
+    }
+  }
+}
+ul.hashtag li {
+  display: inline-block;
+  padding: 2px 5px;
+  margin: 0 2px;
+  font-size: 10px;
+  border: 1px solid $accent-02;
+  a {
+    transition: $transition;
+  }
+  a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+  }
+}
+
+// entry_content
+.entry_content {
+  margin: 30px 0;
+  font-size: 13px;
+  line-height: 1.8;
+  @media #{$mq-sm} {
+    width: 600px;
+    margin: 30px auto;
+    font-size: 15px;
+  }
+  @media #{$mq-md} {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+
+// entry_footer
+@media #{$mq-md} {
+  .entry_footer {
+    padding: 0 40px;
+  }
+}
+.read_more {
+  text-align: center;
+  margin-bottom: 30px;
+  @media #{$mq-md} {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+ul.share_list {
+  text-align: center;
+  @media #{$mq-md} {
+    text-align: right;
+    margin-bottom: 0;
+  }
+}
+ul.share_list li {
+  display: inline-block;
+  color: $light;
+}
+ul.share_list li.share_button {
+  position:relative;
+  width: 26px;
+  height: 26px;
+  margin: 0 3px;
+  border: 1px solid $light;
+  @media #{$mq-md} {
+    text-align: center;
+  }
+}
+ul.share_list li.share_button a {
+  color: $light;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.5;
+  }
+}
+ul.share_list li.note_count {
+  position: relative;
+  bottom: 7px;
+}
+
+footer.entry_footer .icon {
+  display: inline-block;
+  margin-top: 5px;
+}
+footer.entry_footer .icon-twitter { margin-top: 4px; }
+footer.entry_footer .icon-facebook { font-size: 14px; }
+footer.entry_footer .icon-hatebu { margin-top: 6px; font-size: 13px; }
+
+.adsense {
+  margin: 10px auto 20px auto;
+  text-align: center;
+  @media #{$mq-xs} {
+    max-width: 336px;
+  }
+  @media #{$mq-md} {
+    margin: 30px auto;
+    max-width: 728px;
+  }
+}
+.rebloged_from ul li {
+  font-size: 12px;
+  padding: 2px 0;
+  img {
+    vertical-align: text-bottom;
+  }
+}
+
+// ==========================================
+//
+// load more post
+//
+// ==========================================
+a.navigation {
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid $border;
+  transition: $transition;
+  @media #{$mq-md} {
+    width: 860px;
+    margin: 0 auto;
+    border-top: 1px solid $border;
+  }
+  &:hover {
+    text-decoration: none;
+    background-color: $link;
+    color: #fff;
+    opacity: 0.6;
+  }
+}
+
+// ==========================================
+//
+// footer
+//
+// ==========================================
+footer.footer {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+footer.footer span {
+  display: block;
+  margin: 7px 0;
+  &.site-title {
+    color: $link;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &.site-build {
+    color: $light;
+    font-size: 11px;
+  }
+}
+footer.footer a.return_top_link {
+  display: inline-block;
+  margin-top: 20px;
+  animation: vertical 1s ease-in-out infinite alternate;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Animation
+@keyframes vertical {
+    0% { transform:translateY(-5px); }
+  100% { transform:translateY(  0px); }
+}
