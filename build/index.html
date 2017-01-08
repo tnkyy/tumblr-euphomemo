@@ -14,24 +14,44 @@
 
   <script src="css/sanitize.css"></script>
   <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/slidebars.css" />
   <link rel="stylesheet" href="css/style.css" />
 
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/scripts.js"></script>
-
 </head>
 <body>
 
-<div id="wp">
+<!-- トグルメニューの中身 -->
+<div off-canvas="slidebar-3 top push" class="toggle_content">
+  <div class="toggle_content_inn">
+    <div class="row">
+      <div class="title">About</div>
+      <div class="text">
+        当サイト EUPHO MEMO は、私ユーホ個人の日記サイトです。<br>
+        ときどき、発行物のお知らせや、Webや同人誌の制作に役立つ記事も配信しています。
+      </div>
+    </div>
+    <div class="row">
+      <div class="title">Profile</div>
+      <div class="text">
+        ユーホ　　eupho<br>
+        GraphicもやるWebデザイナー。北海道在住。<br>
+        BL読書感想文の同人誌『興味はあるけど面白い本がわからない人に捧ぐ読書感想文の本』、ガール社のデザインの他、『このBLがやばい！』の選者、レビュワーなどもやってます。<br>
+        <a href="//eupholab.net" target="_blank">Portfolio</a> / <a href="//twitter.com/tnkyy" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="wp" canvas="container">
+
   <header class="header">
     <div class="background_color">
       <h1><img src="./img/logo.svg" alt="EUPHO MEMO" class="logo"></h1>
     </div>
+    <a class="js-toggle-top-slidebar toggle_menu">MENU</a>
   </header>
 
   <div class="main_container autopagerize_page_element">
@@ -147,6 +167,11 @@
     <a href="#wp" class="return_top_link"><i class="icon icon-arrow"></i></a>
   </footer>
 </div><!-- /#wp -->
+
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/slidebars.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

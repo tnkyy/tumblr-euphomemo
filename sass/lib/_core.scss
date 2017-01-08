@@ -27,6 +27,10 @@ header.header .logo {
 header.header h1 {
   margin: 0;
 }
+a.toggle_menu {
+  display: block;
+  position: absolute;
+}
 
 // ==========================================
 //
@@ -239,6 +243,52 @@ footer.footer a.return_top_link {
     text-decoration: none;
   }
 }
+
+// ==========================================
+//
+// toggle menu
+//
+// ==========================================
+.toggle_content {
+  color: $base;
+}
+.toggle_content_inn {
+  padding: 15px;
+  font-size: 11px;
+  margin: 0 auto;
+  @media #{$mq-sm} {
+    width: 600px;
+  }
+  @media #{$mq-md} {
+    width: 860px;
+  }
+}
+.toggle_content_inn .row > div {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px 0;
+  line-height: 1.7;
+}
+.toggle_content_inn {
+  .title {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    @media #{$mq-sm} {
+      width: 90px;
+    }
+  }
+  .text {
+    @media #{$mq-sm} {
+      width: 600px - 90px - 30px;
+    }
+    @media #{$mq-md} {
+      width: 500px;
+    }
+  }
+}
+
 
 // Animation
 @keyframes vertical {

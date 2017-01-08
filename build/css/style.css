@@ -1,5 +1,6 @@
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('http://fonts.googleapis.com/earlyaccess/notosansjp.css');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300');
 
 @charset "UTF-8";
 /* font */
@@ -549,6 +550,10 @@ header.header .logo {
 header.header h1 {
   margin: 0; }
 
+a.toggle_menu {
+  display: block;
+  position: absolute; }
+
 .post {
   padding: 50px 15px;
   border-bottom: 1px solid rgba(171, 171, 171, 0.5); }
@@ -739,6 +744,41 @@ footer.footer a.return_top_link {
           animation: vertical 1s ease-in-out infinite alternate; }
   footer.footer a.return_top_link:hover {
     text-decoration: none; }
+
+.toggle_content {
+  color: #525252; }
+
+.toggle_content_inn {
+  padding: 15px;
+  font-size: 11px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .toggle_content_inn {
+      width: 600px; } }
+  @media (min-width: 1024px) {
+    .toggle_content_inn {
+      width: 860px; } }
+
+.toggle_content_inn .row > div {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px 0;
+  line-height: 1.7; }
+
+.toggle_content_inn .title {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px; }
+  @media (min-width: 768px) {
+    .toggle_content_inn .title {
+      width: 90px; } }
+@media (min-width: 768px) {
+  .toggle_content_inn .text {
+    width: 480px; } }
+@media (min-width: 1024px) {
+  .toggle_content_inn .text {
+    width: 500px; } }
 
 @-webkit-keyframes vertical {
   0% {
